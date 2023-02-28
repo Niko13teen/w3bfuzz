@@ -1,0 +1,5 @@
+httpx
+fake_useragent
+aiohttp
+asyncio
+argparse
