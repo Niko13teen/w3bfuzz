@@ -33,7 +33,7 @@ async def main_function(hostname: str) -> NoReturn:
                     f"{str(target)}/{string}", headers=target.user_agent()
                 ) as response:
                     logging.info(f"{str(target)}/{string} : {response.status}")
-                    if response.status != 404:
+                    if response.status != 404 and response.status != 429:
                         print(f"[+] {str(target)}/{string} : {response.status}")
         else:
             logging.info(f"Payload Code : {pretesting['payload_code']}, Aborted!")
