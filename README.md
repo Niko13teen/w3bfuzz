@@ -1,6 +1,6 @@
 <div align="center"> <h1> w3bfuzz </h1></div>
 <h2> Asynchronous web application fuzzer to detect open/hidden directories. Logging, autotesting is connected, a wordlist from ChatGPT is used (default). </h2>
-<h3> Other WordLists: </h3>
+<h3> Other wordlists: </h3>
 <pre><code> https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallmicro.txt (25611 lines) </code>
 <code> https://raw.githubusercontent.com/maverickNerd/wordlists/master/cvePaths.txt (7549 lines) </code>
 <code> https://raw.githubusercontent.com/maverickNerd/wordlists/master/files/robotsdisallowed_top10000.txt (10000 lines) </code></pre>
