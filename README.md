@@ -8,7 +8,7 @@
 <div>
 <div>
   <h3>
-<pre><code>$pip3 install -r requirements.txt </code>
-<code>$python3 w3bfuzz.py --target https://example.site --wordlist https://raw.githubusercontent.com/maverickNerd/wordlists/master/cvePaths.txt </code></pre>
+<pre><code> pip3 install -r requirements.txt </code>
+<code> python3 w3bfuzz.py --target https://example.site --wordlist https://raw.githubusercontent.com/maverickNerd/wordlists/master/cvePaths.txt </code></pre>
   </h3>
 </div>
