@@ -12,11 +12,11 @@ logging.basicConfig(
 )
 
 
-class Payload:
+class Payload (object):
     def __init__(self, filename) -> str:
         self.wordlist: object = httpx.get(f"{filename}")
         
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return f"{self.wordlist.url}"
 
     def __len__(self) -> int:
@@ -27,13 +27,13 @@ class Payload:
         return payload
 
 
-class Pretesting:
+class Pretesting (object):
     def __init__(self, hostname) -> str:
         self.hostname: str = hostname
         self.ua: object = UserAgent()
         self.headers: str = {"User-Agent": self.ua.random}
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return f"{self.hostname}"
 
     def pretesting(self) -> Dict[str, str]:
