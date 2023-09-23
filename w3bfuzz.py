@@ -13,7 +13,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s %(message)s",
 )
 
-string: str = """
+banner: str = """
     	
 ██╗    ██╗██████╗ ██████╗ ███████╗██╗   ██╗███████╗███████╗
 ██║    ██║╚════██╗██╔══██╗██╔════╝██║   ██║╚══███╔╝╚══███╔╝
@@ -31,7 +31,7 @@ async def main_function(hostname: str, wordlist: str) -> NoReturn:
     payload:    List[str] = filename.get_payloads()
     pretesting: Dict[str, int] = target.pretesting()
     logging.info(f"All payloads: {len(payload)}\nPretesting INFO: {pretesting}")
-    print(f"\n{string}\n[+] All Payloads: {len(Payload(filename))}\n[+] TG Channel: https://t.me/niko13teen_channel\n")
+    print(f"\n{banner}\n[+] All Payloads: {len(Payload(filename))}\n[+] TG Channel: https://t.me/niko13teen_channel\n")
 
     if pretesting["payload_code"] != 200:
         print(
