@@ -3,7 +3,7 @@ import logging
 import aiohttp
 import asyncio
 from typing import List, Dict, NoReturn
-from modules import Payload, Pretesting
+from modules import banner, Payload, Pretesting
 
 
 logging.basicConfig(
@@ -12,18 +12,6 @@ logging.basicConfig(
     filemode="w",
     format="%(asctime)s %(levelname)s %(message)s",
 )
-
-banner: str = """
-    	
-██╗    ██╗██████╗ ██████╗ ███████╗██╗   ██╗███████╗███████╗
-██║    ██║╚════██╗██╔══██╗██╔════╝██║   ██║╚══███╔╝╚══███╔╝
-██║ █╗ ██║ █████╔╝██████╔╝█████╗  ██║   ██║  ███╔╝   ███╔╝ 
-██║███╗██║ ╚═══██╗██╔══██╗██╔══╝  ██║   ██║ ███╔╝   ███╔╝  
- ███╔███╔╝██████╔╝██████╔╝██║     ╚██████╔╝███████╗███████╗
- ╚══╝╚══╝ ╚═════╝ ╚═════╝ ╚═╝      ╚═════╝ ╚══════╝╚══════╝
-	 
-                                              by Niko13TeeN\n-----------------------------------------------------------"""
-
 
 async def main_function(hostname: str, wordlist: str) -> NoReturn:
     filename:   object = Payload(wordlist)
